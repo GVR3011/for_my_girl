@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para mi novia majestuosa ♡</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;500;600&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #fff1f3, #fce0e8, #f8d4e3);
+  color: #784653;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 55px 22px;
+  max-width: 500px;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 55px;
+  font-weight: normal;
+  color: #b45e79;
+}
+
+.subtitle {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.envelope {
+  margin: 45px auto 20px;
+  font-size: 100px;
+  cursor: pointer;
+  transition: transform .5s;
+  animation: pulse 2s infinite;
+}
+
+.envelope:hover { transform: scale(1.1); }
+
+@keyframes pulse {
+  50% { transform: scale(1.06); }
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 14px 28px;
+  background: #bd7189;
+  color: white;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#letter {
+  display: none;
+  margin-top: 35px;
+  padding: 28px 23px;
+  background: rgba(255,255,255,.75);
+  border-radius: 22px;
+  box-shadow: 0 8px 30px #c8879630;
+  line-height: 1.9;
+  animation: appear 1s;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.script {
+  font-family: 'Great Vibes', cursive;
+  font-size: 34px;
+  color: #b45e79;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.photo {
+  background: white;
+  padding: 8px 8px 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px #a66a7930;
+  transform: rotate(-2deg);
+}
+
+.photo:nth-child(even) { transform: rotate(3deg); }
+
+.photo img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.photo p {
+  font-family: 'Great Vibes', cursive;
+  font-size: 21px;
+  margin: 8px 0 0;
+}
+
+.section {
+  margin-top: 55px;
+}
+
+.heart {
+  position: fixed;
+  bottom: -30px;
+  pointer-events: none;
+  animation: float 7s linear forwards;
+  z-index: 10;
+}
+
+@keyframes float {
+  to {
+    transform: translateY(-110vh) rotate(30deg);
+    opacity: 0;
+  }
+}
+
+footer {
+  margin-top: 55px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <p class="subtitle">UN PEQUEÑO RECORDATORIO PARA TI ♡</p>
+
+  <h1>Para mi vida linda</h1>
+
+  <p>Hay algo que quiero recordarte...</p>
+
+  <div class="envelope" onclick="openLetter()">💌</div>
+
+  <button onclick="openLetter()">Abrir mi cartita ♡</button>
+
+  <div id="letter">
+
+    <h2 class="script">Mi amor...</h2>
+
+    <p>
+      Llegaste a mi vida justo cuando más te necesitaba,
+      llenando mi vida de colores, de luz, de amor y de mucha paz.
+    </p>
+
+    <p>
+      Estar contigo se siente como un sueño hecho realidad;
+      desde que te conocí, supe que tendría que luchar por ti toda mi vida,
+      porque tu vales cada esfuerzo, cada carrera; y si bien logré que
+      fueras mi novia, me queda demasiada lucha y esfuerzo para que sigas siendo feliz y muy amada.
+    </p>
+
+    <p>
+      No imagino y ni quiero habitar un mundo en donde no te haya conocido,
+      en donde no haya intentando conquistarte, en donde no te haya amado con locura,
+      en donde no te haya podido llamar mi amor, en donde no fuéramos nosotras.
+    </p>
+
+    <p>
+      Espero más historias de nosotras, espero más vida a tu lado,
+      quiero conocer todo lo bonito del mundo a tu lado, quiero ser yo
+      quien pueda agarrar de tu mano por siempre. Quiero ser tu mujer siempre.
+    </p>
+
+    <h2 class="script">Te elegiría siempre. ♡</h2>
+
+    <div class="section">
+      <h2 class="script">Nuestros pedacitos de felicidad</h2>
+
+      <div class="gallery">
+
+        <div class="photo">
+          <img src="foto1.jpeg" alt="Nuestro recuerdo">
+          <p>Después de un día muy bonito a tu lado</p>
+        </div>
+
+        <div class="photo">
+          <img src="foto2.jpeg" alt="Nuestro recuerdo">
+          <p>El día en que, por fín, me dijiste que si (28/03/26)</p>
+        </div>
+
+        <div class="photo">
+          <img src="foto3.jpeg" alt="Nuestro recuerdo">
+          <p>Lo increíble que se siente abrazarte</p>
+        </div>
+
+        <div class="photo">
+          <img src="foto4.jpeg" alt="Nuestro recuerdo">
+          <p>Mi persona favorita de todo el universo</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="script">¿Sabes qué es lo más bonito?</h2>
+      <p>
+        Que todavía nos quedan muchísimas fotografías
+        por tomar, lugares por conocer y recuerdos
+        por crear; siempre a tu lado. 
+        Prometo enamorarte cada día.
+      </p>
+    </div>
+
+    <footer>
+      In every lifetime, I'd choose you. ♡
+      <p>Tuya, GVR.</p>
+    </footer>
+
+  </div>
+</div>
+
+<script>
+function openLetter() {
+  const letter = document.getElementById('letter');
+  letter.style.display = 'block';
+
+  letter.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+
+  document.querySelector('.envelope').textContent = '💖';
+}
+
+function createHeart() {
+  const heart = document.createElement('div');
+  heart.className = 'heart';
+  heart.textContent = ['♡', '♥', '✧', '💕'][
+    Math.floor(Math.random() * 4)
+  ];
+
+  heart.style.left = Math.random() * 100 + 'vw';
+  heart.style.fontSize = (15 + Math.random() * 20) + 'px';
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 7000);
+}
+
+setInterval(createHeart, 700);
+</script>
+
+</body>
+</html>
